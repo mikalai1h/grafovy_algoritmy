@@ -14,6 +14,5 @@ public:
     void addEdge(int, int);
     set<int> getNeighbors(int);
     void deleteVertex(int);
-    void printGraph();
     int deg(int v);
 };
