@@ -20,21 +20,6 @@ void Graph::deleteVertex(int v)
         it.second.erase(v);
 }
 
-void Graph::printGraph() {
-    cout << "List of vertex: { ";
-    for (auto& v : V) {
-        cout << v << " ";
-    }
-    cout << "}" << endl;
-    for (const auto& it : adj) {
-        cout << it.first << ": {";
-        for (auto& v : it.second)
-            cout << v << " ";
-        cout << "}" << endl;
-    }
-    cout << endl;
-}
-
 int Graph::deg(int v)
 {
     if (V.count(v) == 0)
